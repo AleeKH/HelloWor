@@ -27,7 +27,7 @@ jobs:
         with:
           args: --acl public-read --follow-symlinks --delete
         env:
-          AWS_S3_BUCKET: ${{ hello232 }}
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           AWS_ACCESS_KEY_ID: ${{ AKIAQTPIUEHYWFIYNOF5 }}
           AWS_SECRET_ACCESS_KEY: ${{ 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 }}
           AWS_REGION: "us-east-1" # optional: defaults to us-east-1
